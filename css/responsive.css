@@ -314,6 +314,7 @@
         display: none !important;
     }
     .mobNav {
+        opacity:1;
         display: block;
         position: fixed;
         bottom: 40px;
@@ -479,6 +480,7 @@
         display: none !important;
     }
     .mobNav {
+        opacity:1;
         display: block;
         position: fixed;
         bottom: 40px;
@@ -653,6 +655,7 @@
         display: none !important;
     }
     .mobNav {
+        opacity:1;
         display: block;
         position: fixed;
         bottom: 40px;
