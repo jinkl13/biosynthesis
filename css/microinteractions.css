@@ -1,0 +1,278 @@
+.header-visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.logo {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.4s ease 0.2s;
+}
+.logo-visible {
+    opacity: 1; 
+    transform: translateY(0);
+}
+
+nav, .loginButton{
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.4s ease 0.3s;
+}
+
+.nav-visible, .loginButton-visible{
+    opacity: 1; 
+    transform: translateY(0);
+}
+
+.heroTag{
+    opacity:0;
+    transform: translateY(-150px);
+    transition: all 2s ease 0.3s;
+}
+
+.heroTagVisible{
+    opacity: 1; 
+    transform: translateY(0);
+}
+
+
+.abcd{
+    opacity:0;
+    transform: translateY(150px);
+    transition: all 1s ease 0.3s;
+}
+.efgh{
+    opacity:0;
+    transform: translateY(150px);
+    transition: all 1s ease 0.35s;
+}
+
+.abcdVisible{
+    opacity: 1; 
+    transform: translateY(0);
+}
+.efghVisible{
+    opacity: 1; 
+    transform: translateY(0);
+}
+
+.getstartedButton{
+    opacity:0;
+    transform: translateY(150px);
+    transition: all 1s ease 1s;
+}
+
+.ijkl{
+    opacity:0;
+    transform: translateY(-150px);
+    transition: all 1s ease 1s;
+}
+
+.ijklVisible{
+    opacity: 1; 
+    transform: translateY(0);
+}
+.getstartedButtonVisible{
+    opacity: 1; 
+    transform: translateY(0);
+}
+
+
+/* about section animations */
+
+#aboutContainerpLeft, #aboutContainerpRight {
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.4,0,0.2,1);
+    position: relative;
+}
+#aboutContainerpLeft {
+    transform: translateX(-80px);
+}
+#aboutContainerpRight {
+    transform: translateX(80px);
+}
+#aboutContainerpLeft.slide-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+#aboutContainerpRight.slide-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* reviewaction animations */
+
+
+
+
+
+.reviewCards,
+#scrollLeftBtn,
+#scrollRightBtn,
+#reviewCardOne,
+#reviewCardTwo,   
+#reviewCardThree 
+   {
+  opacity: 0;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, opacity;
+}
+
+
+#rcmt1 {
+    opacity:0;
+  transform: translateY(-150px);
+  transition: all 1s ease 0.2s;
+}
+#rcmt1.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Individual transitions */
+#reviewCardOne {
+    opacity:0;
+  transform: translateY(150px);
+  transition: all 2s ease 0.2s;
+}
+
+#reviewCardOne.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#reviewCardTwo {
+    opacity:0;
+  transform: translateY(-150px);
+  transition: all 2s ease 0.3s;
+}
+
+#reviewCardTwo.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#reviewCardThree {
+    opacity:0;
+  transform: translateY(-150px);
+  transition: all 1.5s ease 0.2s;
+}
+
+#reviewCardThree.animate {
+    opacity: 1;
+    transform: translateY(-40px);
+}
+
+#reviewCardFour {
+    opacity:0;
+  transform: translateY(150px);
+  transition: all 2s ease 0.2s;
+}
+
+#reviewCardFour.animate {
+    opacity: 1;
+    transform: translateY(40px);
+}
+
+
+
+#scrollLeftBtn {
+    opacity:0;
+  transform: translateX(150px);
+  transition: all 0.4s ease 0.2s;
+}
+#scrollLeftBtn.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#scrollRightBtn {
+    opacity:0;
+  transform: translateX(-150px);
+  transition: all 0.4s  ease 0.2s;
+}
+#scrollRightBtn.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* products animation */
+
+
+/* Slide-in for headings */
+/* Initial states */
+/* Initial states */
+#pc1h2{
+  opacity: 0;
+  transform: translateY(150px);
+  
+}
+#pc2h2 {
+  opacity: 0;
+  transform: translateY(150px);
+  
+}
+
+#pTextL{
+    opacity:0;
+    transform: translateX(-150px);
+}
+#pTextR{
+    opacity:0;
+    transform: translateX(150px);
+}
+#pTextL.slide{
+    opacity:1;
+    transform: translateX(0);
+    transition: all 1s ease 0.3s;
+}
+#pTextR.slide{
+    opacity:1;
+    transform: translateX(0);
+    transition: all 1s ease 0.3s;
+}
+
+#pc1h2.slide {
+    z-index: 10;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s ease 0.2s;
+}
+
+#pc2h2.slide {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s ease 0.3s;
+}
+
+/* Rotate animation */
+@keyframes rotateToPosition {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-35deg);
+  }
+}
+
+.productsAction.animate-rotate {
+  animation: rotateToPosition 0.8s ease-out forwards;
+}
+
+
+/* footer animations */
+
+#footerRowTwo {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+#footerRowTwo.slideIn {
+  transform: translateY(0);
+  opacity: 1;
+}
